@@ -1,0 +1,157 @@
+.configuration-container {
+  background: #f0f0f0;
+  min-height: 100vh;
+  padding: 32px 20px;
+}
+.config-title {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.config-subtitle {
+  font-size: 1.12rem;
+  color: #7f8c8d;
+  margin-bottom: 22px;
+}
+.config-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 22px 20px 18px 20px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.06);
+}
+.config-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 9px;
+}
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 16px;
+}
+.form-group {
+  flex: 1 0 220px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.full-width {
+  margin-top: 12px;
+}
+.form-group label {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-bottom: 6px;
+}
+.form-group input,
+.form-group textarea {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background: #fff;
+  font-size: 1rem;
+  resize: none;
+}
+.gym-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  object-fit: cover;
+}
+.btn-primary {
+  background: #d90429;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.btn-primary:hover {
+  background: #ac1128;
+}
+.btn-secondary {
+  background: #3498db;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 11px 20px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.btn-secondary:hover {
+  background: #217dbb;
+}
+.sensor-table-container {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+.sensor-table {
+  min-width: 840px;
+}
+.sensor-table-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  background: #fff;
+  padding: 8px 0;
+}
+.sensor-table-header {
+  background: #f8f9fa;
+  border-bottom: 2px solid #dcdcdc;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.sensor-table-cell {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.sensor-col-name { width: 180px; }
+.sensor-col-type { width: 200px; }
+.sensor-col-zone { width: 160px; }
+.sensor-col-status { width: 140px; }
+.sensor-col-battery { width: 90px; }
+.sensor-col-actions {
+  width: 100px;
+  gap: 10px;
+}
+.status-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.1s;
+}
+.icon-btn:hover {
+  transform: scale(1.1);
+}

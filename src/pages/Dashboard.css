@@ -1,0 +1,109 @@
+.dashboard-container {
+  background: #f0f0f0;
+  min-height: 100vh;
+  padding: 36px 24px;
+}
+
+.dashboard-title {
+  font-size: 2.1rem;
+  color: #1A1A1A;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.widgets-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: flex-start;
+}
+
+.widget-card {
+  background: #fff;
+  border-radius: 11px;
+  padding: 20px 20px 16px 20px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.06);
+  width: 320px;
+  min-width: 270px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.widget-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.widget-card-title {
+  font-size: 1.19rem;
+  font-weight: 600;
+  color: #232323;
+}
+
+.widget-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.alert-item {
+  margin-bottom: 9px;
+}
+.alert-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+.alert-detail-text {
+  font-weight: 400;
+  color: #7f8c8d;
+}
+
+.widget-data-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.widget-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1A1A1A;
+  margin-bottom: 3px;
+}
+.widget-label {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.status-container {
+  margin-top: 6px;
+}
+.status-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.widget-text {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.inventory-list {
+  margin-top: 8px;
+}
+
+/* 🔁 Responsivo */
+@media (max-width: 768px) {
+  .widgets-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .widget-card {
+    width: 90%;
+    min-width: unset;
+  }
+}

@@ -1,0 +1,19 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  margin-left: 220px; /* mismo ancho que el sidebar */
+  padding: 32px 24px;
+  background: #f7f7f7;
+}
+
+.page-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  min-height: 60vh;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+}

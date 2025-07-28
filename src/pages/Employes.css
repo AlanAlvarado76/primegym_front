@@ -1,0 +1,230 @@
+.employees-container {
+  padding: 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+.employees-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.employees-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+.add-employee-btn {
+  display: flex;
+  align-items: center;
+  background-color: #d90429;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.add-employee-btn:hover {
+  background-color: #c00024;
+}
+
+.employee-form {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.employee-form input,
+.employee-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.employee-form button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.btn-save {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #218838;
+}
+
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #c82333;
+}
+
+.employees-table-container {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.employees-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.employees-table th,
+.employees-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.employees-table th {
+  background-color: #f1f1f1;
+  font-weight: 700;
+  color: #555;
+}
+
+.employees-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+
+.multi-select {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #333;
+}
+
+.multi-select option {
+  padding: 6px;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+  .employees-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-employee-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .employees-title {
+    margin-bottom: 12px;
+  }
+
+  .employee-form {
+    padding: 12px;
+  }
+
+  .employees-table th,
+  .employees-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .employees-table {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .employees-table th,
+  .employees-table td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .employee-form button {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+.employees-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.search-input {
+  padding: 10px 12px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 12px;
+  background-color: #fff;
+}
+
+
+.employees-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 240px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+
+

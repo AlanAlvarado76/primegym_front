@@ -1,0 +1,20 @@
+{
+  "short_name": "PrimeGym",
+  "name": "Prime Gym Web",
+  "icons": [
+    {
+      "src": "assets/Prime_Gym.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/Prime_Gym.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#23272f",
+  "background_color": "#f7f7f7"
+}

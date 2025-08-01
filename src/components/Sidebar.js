@@ -7,10 +7,10 @@ import { GiChart } from "react-icons/gi";
 import { RiTeamLine } from "react-icons/ri";
 import { BsClipboardCheck } from "react-icons/bs";
 import ConfirmModal from "../components/ConfirmModal";
-import { isAdmin, logout } from "../utils/auth"; // ✅ Se importa logout aquí
+import { isAdmin } from "../utils/auth"; // ✅ Solo usamos isAdmin
 import "./Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ onLogout }) => {
   const location = useLocation();
   const [showLogoutModal, setShowLogoutModal] = useState(false);
   const admin = isAdmin();
@@ -73,7 +73,7 @@ const Sidebar = () => {
           message="¿Estás seguro que quieres cerrar sesión?"
           onConfirm={() => {
             setShowLogoutModal(false);
-            logout(); // ✅ Aquí usamos la función global logout
+            onLogout(); // ✅ Llama al logout que viene del padre
           }}
           onCancel={() => setShowLogoutModal(false)}
         />

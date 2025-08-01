@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Login from "./pages/Login";
@@ -17,16 +17,21 @@ import { isAdmin } from "./utils/auth";
 import "./App.css";
 
 function App() {
-  // Elimina token y usuario al iniciar la app
-  useEffect(() => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
-  }, []);
-
-  const [authenticated, setAuthenticated] = useState(false);
+  // ✅ Autenticación persistente desde localStorage
+  const [authenticated, setAuthenticated] = useState(() => {
+    return !!localStorage.getItem("token");
+  });
 
   const handleLogin = () => {
     setAuthenticated(true);
+  };
+
+  // ✅ Logout seguro
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    setAuthenticated(false);
+    window.location.href = "/login";
   };
 
   const ProtectedRoute = ({ children, adminOnly = false }) => {
@@ -40,7 +45,7 @@ function App() {
 
     return (
       <div className="app-layout">
-        <Sidebar onLogout={() => setAuthenticated(false)} />
+        <Sidebar onLogout={handleLogout} />
         <div className="app-content">{children}</div>
       </div>
     );
